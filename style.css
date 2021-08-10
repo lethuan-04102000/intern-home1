@@ -204,7 +204,7 @@ ul {
 
 .slider {
   width: 100%;
-  height: 670px;
+  height: 500px;
 }
 
 .slider img {
@@ -284,16 +284,19 @@ ul {
 
 .courses {
   width: 100%;
-  height: 506px;
- 
   position: relative;
 }
-.courses-top {
-  height: 300px;
-  margin-bottom: auto;
-  background: #d7bd73;
-
+.courses-top::before {
+  content: '';
+    width: 100%;
+    position: absolute;
+    background: #d8be73;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    height: 500px;
 }
+
 .courses-header {
   text-align: center;
 }
@@ -427,5 +430,3 @@ ul {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-
