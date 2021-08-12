@@ -573,6 +573,7 @@ font-weight: bold;
 }
 
 .features {
+  margin-top: 200px;
   width: 100%;
   height: auto;
   background: orange;
@@ -835,27 +836,88 @@ font-weight: bold;
 }
 
 .provides h2 {
-  
+  font-weight: bold;
   position: relative;
-   margin-top: -25%;
-
+  margin-top: -25%;
+  font-size: 40px;
 }
 
+.provides h1 {
+  font-weight: bold;
+  
+
+} 
+.provides p {
+  margin-top: 12px;
+}
+
+.provides-a  button {
+  margin-top: 20px;
+  padding: 20px 55px;
+  font-size: 14px;
+  border-radius: 30px;
+  background: transparent;
+  color: #ffffff;
+  border: 3px solid white;
+  font-weight: bold;
+}
 
 
 
 
 /* intrustor */
-.container-intrustor {
-  height: 300px;
-  width: 100%;
-}
-.instruster-left {
-  background-color: #d8be73;
+.service {
+  margin-top: -100px;
+  border-radius: 3px;
 }
 
+.service-left h4 {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
 
-.business-right {
-  background-color: #d8be73;
+.service-left p  {
+  text-align: center;
+  color: white;
+}
 
+
+.service1 {
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left :-50%;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+}
+
+
+
+.service-right h4 {
+  margin-top: 20px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+}
+
+.service-right p  {
+  text-align: center;
+  color: white;
+}
+
+
+.service2 {
+  margin-top: 60px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left :-50%;
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
 }
