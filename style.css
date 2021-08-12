@@ -499,7 +499,6 @@ font-weight: bold;
 }
 
 .right1 {
-  
   margin: 0;
   padding: 0;
 }
@@ -577,15 +576,22 @@ font-weight: bold;
 
 .coure-s {
   position: absolute;
-  right:  15% ;
+  right:  10% ;
   width: 100px;
-  height: 30px;
+  height: 35px;
   background: #d7bd73;
   float: right;
   position: relative;
   text-align: center;
-  border-radius: 20px;
-  margin-top: -43px; 
+  border-radius: 3px;
+  margin-top: -45px; 
+ 
+}
+.coure-s p {
+  font-size: 15px ;
+  color: white;
+  margin-top: 3px;
+  right: 12px;
 
 }
 
@@ -622,7 +628,7 @@ font-weight: bold;
   margin-top: 200px;
   width: 100%;
   height: auto;
-  background: orange;
+  
 }
 .features-center {
   display: flex;
@@ -635,7 +641,8 @@ font-weight: bold;
 .features-right {
   width: 50%;
   height: auto;
-  background: blue;
+  background-color:#1c2f4d ;
+  
   position: relative;
 }
 .features-all {
@@ -750,6 +757,16 @@ font-weight: bold;
 .description-1 i {
   font-size: 70px;
   padding-right: 10px;
+  color: #d8be73;
+}
+.description-1 img {
+ width: 10%;
+ height: 10%;
+ margin-top: 20px;
+
+}
+.most-only {
+  margin-left: 120px;
 }
 
 .description-title h4 {
@@ -771,6 +788,8 @@ font-weight: bold;
   width: 100%;
   height: auto;
   background: #ffffff;
+  position: relative;
+  text-align-last:center;
 }
 .recent-center {
   text-align: center;
@@ -889,7 +908,7 @@ font-weight: bold;
 .provides h2 {
   font-weight: bold;
   position: relative;
-  margin-top: -25%;
+  margin-top: -35%;
   font-size: 40px;
 }
 
@@ -917,11 +936,18 @@ font-weight: bold;
 
 
 /* intrustor */
+.main{
+  border-radius:10px ;
+}
 .service {
   margin-top: -100px;
   border-radius: 3px;
 }
 
+.service-left {
+  border-radius: 8px 0px 0px 8px;
+
+}
 .service-left h4 {
   margin-top: 20px;
   text-align: center;
@@ -948,6 +974,10 @@ font-weight: bold;
 
 
 
+.service-right {
+  border-radius: 0px 8px 8px 0px;
+
+}
 .service-right h4 {
   margin-top: 20px;
   text-align: center;
