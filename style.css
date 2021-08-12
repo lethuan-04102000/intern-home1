@@ -721,7 +721,7 @@ font-weight: bold;
 }
 
 /* recent courses */
-..recent {
+.recent {
   width: 100%;
   height: auto;
   background: #ffffff;
@@ -764,7 +764,11 @@ font-weight: bold;
   padding-right: 20px;
 }
 .recent-menu__exercise {
+
   padding-right: 20px;
+  color: #d8be73;
+  border-bottom: 2px solid #d8be73;
+
 }
 .recent-menu__design {
   padding-right: 20px;
@@ -783,6 +787,7 @@ font-weight: bold;
 .recent-menu__exercise span {
   font-size: 18px;
   padding-right: 15px;
+  
 }
 .recent-menu__design span {
   font-size: 18px;
@@ -920,4 +925,40 @@ font-weight: bold;
   width: 78px;
   height: 78px;
   border-radius: 50%;
+}
+
+/* footer */
+.right-footer  h2 {
+  font-weight: bold;
+
+}
+
+.street{
+  color : #d8be73
+}
+.right-footer {
+
+}
+
+.cennter-footer h3 {
+  font-weight: bold;
+}
+
+.cennter2-footer h3 {
+  font-weight: bold;
+
+}
+
+.left-footer h3 { 
+  color: white;
+
+}
+.footer-2 i {
+  width: 38px;
+  position: relative;
+  background: #e7ecf5;
+  padding: 11px 12px;
+  border-radius: 50%;
+  float: right;
+  color: #d8be73 ;
 }
