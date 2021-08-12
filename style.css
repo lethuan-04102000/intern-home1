@@ -93,8 +93,13 @@ ul {
   padding-top: 35px;
   color: #ffffff;
   font-size: 24px;
-  font-weight: bold;
 }
+
+.header-center__grid-logo h2 {
+  font-weight: bold ;
+  margin-top: auto;
+}
+
 .header-center__grid-icon {
   padding-top: 35px;
   margin-left: -10px;
@@ -204,6 +209,7 @@ ul {
 
 .slider {
   width: 110%;
+  height: 100%;
 }
 .slider img {
     width: 100%;
@@ -226,6 +232,7 @@ ul {
   color: white;
   font-weight: bold;
   font-size: 50px;
+  margin-top: 30px;
 }
  .slider p {
   position: absolute;
@@ -233,6 +240,7 @@ ul {
   left: 20%;
   color: #d8be73;
   font-size: 20px;
+  margin-top: 50px;
  }
 
 .slider button{
@@ -240,7 +248,7 @@ ul {
   position: relative;
   width: 250px;
   position: absolute;
-  top: 55%;
+  top: 63%;
   text-align: center;
   left: 20%;
   color:white;
@@ -256,11 +264,12 @@ ul {
 
 
 .services {
+  margin-top: -100px;
   width: 100%;
-  height: 500px;
+  height: 300px;
 }
 .services-center {
-  width: 1300px;
+  width: 100%;
   margin: 118px auto;
   background: orange;
 }
@@ -271,6 +280,10 @@ ul {
 }
 .services-item {
   background-color: #ffffff;
+}
+
+.services-item h3{
+  text-align: center;
 }
 .services-tem:not(:first-child) {
   padding-left: 50px;
@@ -324,18 +337,20 @@ ul {
 }
 
 .courses {
+  margin-top: 150px;
   width: 100%;
   position: relative;
 }
 .courses-top::before {
-  content: '';
+    content: '';
     width: 100%;
     position: absolute;
     background: #d8be73;
     left: 0;
-    bottom: 0;
+    bottom: -10%;
     z-index: -1;
-    height: 400px;
+    height: 500px;
+    
 }
 
 .courses-header {
@@ -475,6 +490,7 @@ ul {
 }
 
 /* tranform */
+
 .left  h1 {
 font-weight: bold;
 }
@@ -553,8 +569,10 @@ font-weight: bold;
 
 .Subcribe input {
   width: 60%;
-  height: 45px;
-  border-radius: 15px;
+  height: 55px;
+  border-radius: 30px ;
+  border: #ffffff;
+  background-color: rgb(240, 226, 226);
 }
  .Subcribe button {
    background-color: #d7bd73;
