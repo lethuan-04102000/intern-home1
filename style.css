@@ -7,9 +7,6 @@
 
 body {
   overflow-x: hidden;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  color: #2d2d2d;
 }
 
 img {
@@ -25,11 +22,23 @@ ul {
   list-style: none;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  color: #2d2d2d;
+}
+
 .container {
-  width: 1172px;
+  width: 1070px;
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 820px;
+    margin: 0 auto;
+  }
+}
 .header {
   width: 100%;
   height: 110px;
@@ -53,7 +62,7 @@ ul {
   align-items: center;
 }
 .header-menu-inner__left-item:not(:first-child) {
-  margin-left: 58px;
+  margin-left: 44px;
 }
 .header-menu-inner__left-item a {
   color: #898989;
@@ -76,14 +85,17 @@ ul {
   color: #2d2d2d;
 }
 .header-center {
-  width: 1300px;
+  width: 1200px;
   height: 109px;
   margin: -50px auto 0 auto;
   background: #1c2f4d;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
+  position: relative;
+  z-index: 1;
 }
 .header-center__grid {
+  top: 50px;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -91,15 +103,13 @@ ul {
 }
 .header-center__grid-logo {
   padding-top: 35px;
-  color: #ffffff;
   font-size: 24px;
+  font-weight: bold;
+  margin-top: -15px;
 }
-
-.header-center__grid-logo h2 {
-  font-weight: bold ;
-  margin-top: auto;
+.header-center__grid-logo a {
+  color: #ffffff;
 }
-
 .header-center__grid-icon {
   padding-top: 35px;
   margin-left: -10px;
@@ -107,9 +117,10 @@ ul {
 .header-center__grid-icon-elment {
   display: flex;
   align-items: center;
+  margin-left: 30px;
 }
 .header-center__grid-icon-item {
-  width: 38px;
+  width: 36px;
   position: relative;
   background: #283857;
   padding: 11px 12px;
@@ -147,23 +158,25 @@ ul {
   position: relative;
   display: flex;
   width: 162px;
-  height: 48px;
+  height: 48.8px;
   overflow: hidden;
-  margin-left: 40px;
+  margin-left: 15px;
   margin-top: 30px;
 }
 .header-center__grid-select::after {
-  content: "∨";
+  content: "‹";
   position: absolute;
-  padding-top: 17px;
-  right: 41px;
+  padding-top: 33px;
+  right: 57px;
   transition: 0.25s all ease;
   pointer-events: none;
   color: #ffffff;
+  transform: rotate(-90deg);
 }
 .header-center__grid-search {
   display: flex;
   padding-top: 30px;
+  margin-right: 10px;
 }
 .header-center__grid-search input {
   width: 380px;
@@ -173,8 +186,12 @@ ul {
   margin-left: -80px;
   background: none;
   border: 1px solid #898989;
+  padding-left: 100px;
 }
-.header-center__grid-search button {
+.header-center__grid-search input::placeholder {
+  color: #ffffff;
+}
+.header-center__grid-search a {
   background: #898989;
   padding: 14px 16px;
   border-radius: 50%;
@@ -188,13 +205,15 @@ ul {
   justify-content: flex-end;
   padding-top: 30px;
 }
-.header-center__grid-login button {
+.header-center__grid-login a {
   width: 180px;
-  height: 48px;
+  height: 44px;
   background: none;
   border-radius: 30px;
   color: #d8be73;
   border: 1px solid #ffffff;
+  font-size: 12px;
+  padding: 15px 0px 0px 25px;
 }
 
 .header::after {
@@ -206,6 +225,97 @@ ul {
   background-color: rgba(0, 0, 0, 0.5);
   z-index: -1;
 }
+
+.nav__menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header-center {
+    width: 900px;
+    height: 99px;
+  }
+  .header-center__grid-logo {
+    font-size: 16px;
+  }
+  .header-center__grid-icon-item {
+    padding: 9px 11px;
+    width: 30px;
+  }
+  .header-center__grid-icon-item:first-child {
+    padding: 9px 11px;
+  }
+  .header-center__grid-icon-item a i {
+    font-size: 11px;
+  }
+  .header-center__grid-login a {
+    width: 140px;
+    height: 38px;
+    padding: 15px 0px 0px 16px;
+    font-size: 10px;
+  }
+  .header-center__grid-search input {
+    width: 300px;
+    height: 38px;
+  }
+  .header-center__grid-search a {
+    padding: 12px 14px;
+    margin-left: -40px;
+  }
+  .header-center__grid-select {
+    width: 122px;
+    height: 38px;
+    margin-top: -25px;
+  }
+  .header-center__grid-select select {
+    font-size: 12px;
+    padding-left: 20px;
+    height: 55px;
+  }
+  .header-center__grid-select::after {
+    padding-top: 26px;
+    right: 40px;
+  }
+  .header-menu-inner__left-item {
+    font-size: 10px;
+  }
+  .header-menu-inner__right-item:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header-menu-inner {
+    display: none;
+  }
+  .header-center {
+    display: none;
+  }
+
+  .nav__menu {
+    display: block;
+    background: #ffffff;
+  }
+
+  .nav__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 20px;
+  }
+
+  .nav__logo a {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c2c2c;
+  }
+
+  .nav__hamburger i {
+    font-size: 30px;
+    color: #2c2c2c;
+  }
+}
+
 
 .slider {
   width: 110%;
@@ -280,6 +390,7 @@ ul {
 }
 .services-item {
   background-color: #ffffff;
+  
 }
 
 .services-item h3{
@@ -293,9 +404,10 @@ ul {
   height: 200px;
   position: relative;
   padding-left: 54px;
+  
 }
 .services-image {
-  width: 100%;
+  width: 98%;
   height: 100%;
   border-radius: 50%;
   position: absolute;
@@ -320,19 +432,36 @@ ul {
   position: absolute;
   margin: 20px 20px 20px 30px;
 }
-.services-item h3 {
-  padding-top: 20px;
+.services-box h3 {
+  padding-top: 200px;
   padding-left: 52px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: bold;
+  width: 140%;
+  text-align: center;
+  display: flex;
 }
-.services-item p {
-  padding-top: 15px;
+
+.expand {
+  width: 250%;
+margin-right: 153px;
+padding-top: 200px;
+padding-left: 45px;
+font-size: 20px;
+font-weight: bold;
+
+text-align: center;
+display: flex;
+}
+
+.services-box p {
+  width: 145%;
+  /* padding-top: 15px;
   padding-left: 40px;
-  padding-right: 25px;
-  text-align: justify;
-  -moz-text-align-last: center;
-  text-align-last: center;
+  padding-right: 25px; */
+  text-align: center;
+ 
+ 
   line-height: 1.5;
 }
 
@@ -355,10 +484,12 @@ ul {
 
 .courses-header {
   text-align: center;
+  margin-top: 151px;
 }
 .courses-image {
   width: 128px;
   height: 91px;
+  margin-top: 151px;
   margin-bottom: 10px;
 }
 .courses-header h3 {
@@ -372,7 +503,7 @@ ul {
   color: #605843;
 }
 .courses-content {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 0 1rem;
   padding: 1rem 0;
