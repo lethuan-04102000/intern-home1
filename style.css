@@ -326,7 +326,7 @@ body {
 }
 .slider h1 {
  color: white;
- position: absolute;
+ position: relative;
  top: 35%;
  left: 20%;
  color: white;
@@ -370,111 +370,107 @@ body {
   text-decoration: none;
   
 }
+@media only screen and (max-width: 450px) {
+  .slider {
+    width: 110%;
+    height: 100%;
+  }
+  .slider img {
+      width: 100%;
+  }
 
-
-@media only screen and (min-width: 480px) {
-  .services-item {
-    margin-top: 100px;
-    height: 150%;
-    margin-left:auto ;
-    margin-right: auto;
+  .slider h1 {
+    color: white;
+    position: relative;
+    top: -125%;
+    left: 20%;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+   } 
+   
+   .slider h2 {
+     color: white;
+     position: absolute;
+     top: -30%;
+     left: 20%;
+     color: white;
+     font-weight: bold;
+     font-size: 50px;
+     margin-top: 30px;
+   }
+    .slider p {
+     position: absolute;
+     top: 49%;
+     left: 20%;
+     color: #d8be73;
+     font-size: 20px;
+     margin-top: 50px;
     }
+   
+   .slider button{
+     height: 50px;
+     position: relative;
+     width: 250px;
+     position: absolute;
+     top: 63%;
+     text-align: center;
+     left: 20%;
+     color:white;
+     font-weight: bold;
+     font-size: 15px;
+     border: 1px solid #d8be73;
+     border-radius: 30px;
+     background-color: transparent;
+     text-decoration: none;
+     
+   }
 }
 
-@media only screen and (max-width: 960px) {
-  .services-item {
-    margin-top: 100px;
-    height: 150%;
-    margin-left:auto ;
-    margin-right: auto;
+@media only screen and (min-width: 1000px) {
+    .service img {
+        margin-top: 200px;
+        position: relative;
+        margin: auto;
+        top: 0;
+        left: 150px;
+        right: 0;
+        bottom: 0;
     }
-}
+    .service h3 {
+      text-align: center;
+    }
 
-.services-center {
-  width: 100%;
-  margin: 118px auto;
-  background: orange;
-}
-
-.services-item {
-  background-color: #ffffff;
-  
-}
-
-.services-item h3{
-  text-align: center;
-}
-.services-tem:not(:first-child) {
-  padding-left: 50px;
-}
-.services-box {
-  width: 206px;
-  height: 200px;
-  position: relative;
-  padding-left: 54px;
-  
-}
-.services-image {
-  width: 98%;
+.service {
   height: 100%;
-  border-radius: 50%;
-  position: absolute;
 }
-.services-icon {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  position: absolute;
-  margin: 25px 29px;
+
+.service img {
+  position: relative;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
-.services-number {
-  width: 67px;
-  height: 67px;
-  background: #1c2f4d;
-  border-radius: 50%;
-  position: absolute;
-  margin: 110px 145px 160px;
-}
-.services-number span {
-  color: #ffffff;
-  position: absolute;
-  margin: 20px 20px 20px 30px;
-}
-.services-box h3 {
-  padding-top: 200px;
-  padding-left: 52px;
-  font-size: 20px;
+
+.service h3 {
   font-weight: bold;
-  width: 140%;
   text-align: center;
-  display: flex;
 }
 
-.expand {
-  width: 250%;
-margin-right: 153px;
-padding-top: 200px;
-padding-left: 45px;
-font-size: 20px;
-font-weight: bold;
-
-text-align: center;
-display: flex;
-}
-
-.services-box p {
-  width: 145%;
-  /* padding-top: 15px;
-  padding-left: 40px;
-  padding-right: 25px; */
+.service p {
   text-align: center;
- 
- 
-  line-height: 1.5;
 }
+
 
 .courses {
   margin-top: 150px;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+}
+.coursess {
   width: 100%;
   position: relative;
 }
@@ -488,6 +484,16 @@ display: flex;
     z-index: -1;
     height: 500px;
     
+}
+.courses-top-2::before {
+  content: '';
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -10%;
+  z-index: -1;
+
+  
 }
 
 .courses-header {
