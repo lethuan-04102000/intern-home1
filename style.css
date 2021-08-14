@@ -1174,11 +1174,16 @@ font-weight: bold;
 /* footer */
 .right-footer  h2 {
   font-weight: bold;
-
+  float: left;
 }
 
 .street{
-  color : #d8be73
+  color : #d8be73;
+  float:left;
+}
+.right-footer p {
+ float: left;
+ 
 }
 
 .cennter-footer h3 {
