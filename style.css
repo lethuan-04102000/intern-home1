@@ -206,7 +206,7 @@ body {
   height: 44px;
   overflow: hidden;
   margin-left: 15px;
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .header-center__grid-select::after {
   content: "‹";
@@ -599,21 +599,21 @@ body {
 
 
 @media only screen and (max-width: 1900px) {
-  service {
+  services {
     height: 150%;
     margin-top: 500px;
   }
 
-  .service h3 {
+  .services h3 {
     font-weight: bold;
     text-align: center;
   }
   
-  .service p {
+  .services p {
     text-align: center;
   }
   
-.service img {
+.services img {
   position: absolute;
   
   transform: translateY(-170%);
@@ -626,11 +626,11 @@ body {
 
 }
 
-.service {
+.services {
   height: 450px;
 }
 
-.service img {
+.services img {
   text-align: center;
   margin: auto;
   top: 0;
@@ -639,12 +639,12 @@ body {
   bottom: 0;
 }
 
-.service h3 {
+.services h3 {
   font-weight: bold;
   text-align: center;
 }
 
-.service p {
+.services p {
   text-align: center;
 }
 
@@ -924,6 +924,7 @@ font-weight: bold;
   right:  10% ;
   width: 100px;
   height: 35px;
+  font-weight: bold;
   background: #d7bd73;
   float: right;
   position: relative;
@@ -951,7 +952,8 @@ font-weight: bold;
   height: 55px;
   border-radius: 30px ;
   border: #ffffff;
-  background-color: rgb(240, 226, 226);
+  transition: 1s;
+  box-shadow: 0 0 2pt 2pt #c7bebe;
 }
  .Subcribe button {
    background-color: #d7bd73;
@@ -968,7 +970,12 @@ font-weight: bold;
 .chandung {
   margin-left: 700px;
 }
-
+@media only screen and (max-width: 1000px) {
+  .chandung {
+    margin-left: 00px;
+  }
+  
+}
 .features {
   margin-top: 200px;
   
@@ -1189,8 +1196,7 @@ font-weight: bold;
   padding-right: 20px;
 }
 .recent-menu__exercise {
-
-  padding-right: 20px;
+  padding-right: 10px;
   color: #d8be73;
   border-bottom: 2px solid #d8be73;
 
@@ -1300,7 +1306,7 @@ font-weight: bold;
   border-radius:10px ;
 }
 .service {
-  margin-top: -100px;
+  margin-top: -200px;
   border-radius: 3px;
 }
 
@@ -1309,9 +1315,10 @@ font-weight: bold;
 
 }
 .service-left h4 {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   color: white;
+  font-size: 30px;
   font-weight: bold;
 }
 
@@ -1339,9 +1346,10 @@ font-weight: bold;
 
 }
 .service-right h4 {
-  margin-top: 20px;
+  margin-top: 30px;
   text-align: center;
   color: white;
+  font-size: 30px;
   font-weight: bold;
 
 }
@@ -1377,7 +1385,8 @@ font-weight: bold;
 }
 .right-footer p {
  float: left;
- 
+ line-height: 179.5%;
+
 }
 
 .cennter-footer h3 {
@@ -1401,4 +1410,12 @@ font-weight: bold;
   border-radius: 50%;
   float: right;
   color: #d8be73 ;
+}
+.footerr {
+  margin-top: 100px;
+}
+@media only screen and (max-width: 620px) {
+ .footerr{
+   margin-top: 0px;
+ }
 }
